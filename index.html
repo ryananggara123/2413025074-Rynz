@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ryan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-light: #f9f9f9;
+            --bg-dark: #1a1a2e;
+            --text-light: #ffffff;
+            --text-dark: #1a1a1a;
+            --primary: #3a86ff;
+            --accent: #8338ec;
+            --card-bg: #ffffff;
+            --dark-card-bg: #252547;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 40px 20px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin: 0 auto 15px;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .toggle-btn:hover {
+            background: #5b23aa;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode section {
+            background: var(--dark-card-bg);
+        }
+
+        h2 {
+            border-left: 6px solid var(--primary);
+            padding-left: 15px;
+            color: var(--accent);
+        }
+
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            background: #f1f1f1;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s;
+        }
+
+        .contact-icon:hover {
+            transform: translateY(-3px);
+            background: #e0e0e0;
+        }
+
+        .dark-mode .contact-icon {
+            background: #33334d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--primary);
+            color: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    <header>
+        <img src="/IMG_20250422_230813_416.jpg" alt="Foto Ryan" class="profile-img" />
+        <h1>Ryan Anggara Deki</h1>
+        <p>Mahasiswa S1 Universitas Lampung</p>
+        <nav>
+            <ul>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="proyek">
+        <h2>Proyek Saya</h2>
+        <ul>
+            <li><strong>Proyek 1:</strong> Tokoh Perintis Grafika Komputer<br>
+                📹 <a href="https://drive.google.com/file/d/1JOPFZL9J-5UoWG9w-JljRGWI7RQVCep7/view?usp=drive_link"
+                    target="_blank">Video Pembelajaran</a><br>
+                📄 <a href="https://drive.google.com/file/d/1Abn8UFJhJq0xSYX4FeRzcS7UjkLSVFcn/view?usp=drive_link"
+                    target="_blank">PowerPoint</a><br>
+                📘 <a href="https://drive.google.com/file/d/1ANrGFn6uRHu7TwNo5CPuh-kMgpCy382J/view?usp=drive_link"
+                    target="_blank">Materi</a>
+            </li>
+            <li><strong>Proyek 3:</strong> Pembuatan Garis (DDA & Bresenham)<br>
+                📹 <a href="https://drive.google.com/file/d/1AdYrgVPUQd4bwTeF3jbwqxKhEIjczbYy/view?usp=drive_link"
+                    target="_blank">Video Pembelajaran</a><br>
+                📘 <a href="https://drive.google.com/file/d/1_rT9rnL8o9o_iRE2tD1W1vDAMANdi1Ym/view?usp=drive_link"
+                    target="_blank">Materi</a>
+            </li>
+            <li><strong>Proyek 3:</strong> Pembuatan Lingkaran (Midpoint & Bresenham)<br>
+                📹 <a href="https://drive.google.com/file/d/1okPwrpmUQ_KcawgQ9nhy5480DL1GHwOB/view?usp=drive_link"
+                    target="_blank">Video Pembelajaran</a><br>
+                📘 <a href="https://drive.google.com/file/d/1AcPHMAFefQ0l2emMWDndcug14PQC1hkd/view?usp=drive_link"
+                    target="_blank">Materi</a>
+            </li>
+            <li><strong>Proyek 4:</strong> Pembuatan Kurva Bezier<br>
+                📹 <a href="https://" target="_blank">Video Pembelajaran</a><br>
+                📘 <a href="https://" target="_blank">Materi</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Hai, saya Ryan. Saat ini saya menempuh pendidikan sarjana di Program Studi Pendidikan Teknologi Informasi,
+            Universitas Lampung. Lulusan MA AL-HIDAYAT GERNING.</p>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Saya</h2>
+        <div class="contact-icon">
+            <a href="https://wa.me/6282176880877" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24"
+                    height="24" /> WhatsApp
+            </a>
+        </div>
+        <div class="contact-icon">
+            <a href="mailto:ryananggaradeki2024@gmail.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="24" height="24" />
+                Email
+            </a>
+        </div>
+        <div class="contact-icon">
+            <a href="https://www.instagram.com/rynz_anggara" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="24"
+                    height="24" /> Instagram
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Ryan Anggara Deki. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
